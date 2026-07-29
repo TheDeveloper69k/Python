@@ -12,6 +12,11 @@ print(a.get("Name"))
 print(a.get("friends"))
 print(a.get("age"))
 print(a.get("Marks"))
+
+a.update({"Name" : "Hiten Kashyap", "age" : 22 , "City" : "New York"})
+print(a)  # Updates the value of "Name" and "age"
+
+print(a.setdefault("Default", "Null")) # Adds "new_key" with value "Default Value" if it doesn't exist
 print(a.get("nonexistent_key", "Default Value"))  # Returns "Default Value" if key doesn't exist
 
 print(a.pop("age"))  # Removes and returns the value associated with the key "age"
@@ -21,3 +26,5 @@ print(a.pop("age"))  # Removes and returns the value associated with the key "ag
 print(a.popitem())  # Removes and returns the last inserted key-value pair as a tuple
 print(a)
 print(a.copy())  # Returns a shallow copy of the dictionary
+print(a.clear())  # Removes all items from the dictionary
+print(a)  # Output: {}  
